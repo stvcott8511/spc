@@ -1,3 +1,5 @@
+// Starts applaction...
+
 class Main
 {
     constructor(manager){
