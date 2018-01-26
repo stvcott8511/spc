@@ -1,0 +1,18 @@
+{
+  "name": "nrouter",
+  "version": "1.0.0",
+  "main": "Main.js",
+  "scripts": {
+    "scripts": {
+      "test": "jasmine"
+    }
+  },
+  "author": "Steven Cottier",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.2",
+    "jasmine": "^2.9.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
