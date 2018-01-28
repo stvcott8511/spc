@@ -1,4 +1,3 @@
-debugger;
 var routeManager = require("./src/managers/simpleRouteManager");
 var httpManager = require("./src/managers/expressManager");
 
