@@ -1,5 +1,6 @@
 class baseRouteManager {
-    constructor() {
+    constructor(logger) {
+        this.logger = logger;
     }
     start(){}
 }

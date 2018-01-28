@@ -3,9 +3,8 @@ var baseRouteManager = require("./baseRouteManager");
 class simpleRouteManager extends baseRouteManager {
 
     constructor(webManager,logger) {
-        super();
+        super(logger);
         this.webManager = webManager;
-        this.logger = logger;
     }
 
     start(config) {
