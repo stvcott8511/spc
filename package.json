@@ -1,7 +1,7 @@
 {
-  "name": "nrouter",
+  "name": "spc",
   "version": "1.0.0",
-  "main": "Main.js",
+  "main": "server.js",
   "scripts": {
     "scripts": {
       "test": "jasmine"

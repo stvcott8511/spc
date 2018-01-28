@@ -8,19 +8,19 @@ class expressManager extends webManager {
     }
 
     start(config) {
+        var _this = this;
         super.start();
-        {var port} config;
-        app.listen(port, function() {
-            this.logger.log("Express Started");
+        this.app.listen(config.port, function() {
+            _this.logger.log("Express Started");
         });
     }
 
     addRoute(obj) {
         super.addRoute(obj);
         try {
-            {var uri} obj;
-            {var method} obj;
-            {var handler} obj;
+            var uri = obj.uri;
+            var method = obj.method;
+            var handler = obj.handler;
             app[method](uri,function(req, res){
                 var resObj = {
                     send: res.send,
@@ -35,3 +35,5 @@ class expressManager extends webManager {
         }
     }
 }
+
+module.exports = expressManager;

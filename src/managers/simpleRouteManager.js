@@ -8,10 +8,9 @@ class simpleRouteManager extends baseRouteManager {
         this.logger = logger;
     }
 
-    start() {
-        // this.configureRoutes();
-        this.logger.log("simpleRouteManager start")
-        this.webManager();
+    start(config) {
+        this.logger.log("Simple Route Manager Started");
+        this.webManager.start(config);
     }
 }
 
